@@ -1,0 +1,38 @@
+{
+  "name": "zodaka_server_demo",
+  "version": "1.0.0",
+  "description": "Demo server for merchant's integration with Zodaka API",
+  "main": "./server/server.js",
+  "scripts": {
+    "dev": "nodemon server/server.js --exec babel-node ",
+    "start": "nodemon server/server.js --exec babel-node ",
+    "build": "rimraf dist && babel server -d dist/server"
+  },
+  "keywords": [
+    "Zodaka",
+    "API",
+    "Demo",
+    "Merchant",
+    "Server"
+  ],
+  "author": "Zodaka",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "rimraf": "^2.6.2",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.5",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
+    "nodemon": "^1.18.6"
+  }
+}
